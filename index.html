@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Muncher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div id="ui-bar">
+            <div id="score-container">SCORE: <span id="score">0</span></div>
+            <div id="highscore-container">HIGH SCORE: <span id="highscore">0</span></div>
+            <div id="lives-container">
+                LIVES: 
+                <span id="lives">♥ ♥ ♥</span>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="start-menu" class="modal-overlay">
+        <div class="modal-content">
+            <h1>Pixel Muncher</h1>
+            <p>Select Difficulty</p>
+            <button id="easy-btn">EASY</button>
+            <button id="hard-btn">HARD</button>
+        </div>
+    </div>
+
+    <div id="game-over-menu" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h1 id="game-over-title">GAME OVER</h1>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>High Score: <span id="final-highscore">0</span></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
